@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><current-date> Demo</title>
+  <script src="../dist/currentDate.min.js" defer></script>
+  <style>
+    div > div {display:table}
+    div > div > p {display: table-row;}
+    dd,dt, current-date {display: table-cell;margin-inline-start:auto}
+    dt {
+      font-weight:bold;
+      padding: 0.25rem 0.5rem 0.25rem 0;
+    }
+    dd.pre { font-family: monospace}
+  </style>
+</head>
+<body>
+  <h1>Current Date Demo</h1>
+  <div>
+    <h2>Default values</h2>
+    <div>
+      <p><dt>locale</dt> <dd class="pre">en-GB</dd></p>
+      <p><dt>timezone</dt> <dd class="pre">Europe/London</dd></p>
+      <p><dt>format</dt> <dd class="pre">[[day numeric]] [[month long]] [[year numeric]]</dd></p>
+    </div>
+  </div>
+  <div>
+    <h3>Examples</h3>
+    <div>
+      <p><dt>Default:</dt> <current-date>7 April 2025</current-date></p>
+      <p><dt>French (Paris):</dt> <current-date locale="fr-FR" timezone="Europe/Paris">7 avril 2025</current-date></p>
+      <p><dt>Custom Format (DD Month (short) YYYY):</dt> <current-date format="[[day 2-digit]] [[month short]] [[year numeric]]">07 Apr 2025</current-date></p>
+      <p><dt>Custom Format (DD/MM/YYYY):</dt> <current-date format="[[day 2-digit]]/[[month 2-digit]]/[[year numeric]]">07 Apr 2025</current-date></p>
+    </div>
+  </div>
+</body>
+</html>

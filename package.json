@@ -1,0 +1,21 @@
+{
+  "name": "current-date-widget",
+  "version": "1.0.0",
+  "description": "Injects the current date into static HTML.",
+  "main": "dist/currentDate.min.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "date",
+    "web-component",
+    "custom-element",
+    "static-site",
+    "javascript"
+  ],
+  "author": "Michael Hawkins",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.25.4"
+  }
+}
